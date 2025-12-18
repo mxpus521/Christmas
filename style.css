@@ -391,24 +391,113 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Mobile Responsiveness */
+/* Responsive Design */
+
+/* Tablet Breakpoint (e.g., iPad) */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .interactive-layout {
+        gap: 40px;
+    }
+
+    .ring-container {
+        width: 350px;
+        height: 350px;
+    }
+
+    .progress-ring {
+        width: 350px;
+        height: 350px;
+        transform: scale(0.85) rotate(-90deg);
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+}
+
+/* Mobile Breakpoint */
 @media (max-width: 768px) {
     .container {
         padding: 0 20px;
     }
 
+    .lang-switch {
+        top: 20px;
+        right: 20px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    #hero {
+        background-attachment: scroll;
+        /* Fix for performance on mobile */
+    }
+
+    #hero h1 {
+        font-size: 2.8rem;
+        letter-spacing: 0.1em;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
     .grid {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        padding: 30px;
     }
 
     .interactive-layout {
         grid-template-columns: 1fr;
         gap: 40px;
+        text-align: center;
+    }
+
+    .quote {
+        font-size: 1.2rem;
+        border-left: none;
+        border-top: 2px solid var(--accent-gold);
+        padding: 20px 0 0 0;
+    }
+
+    .order-list li {
+        text-align: left;
     }
 
     .ring-container {
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
+    }
+
+    .progress-ring {
+        width: 280px;
+        height: 280px;
+        transform: scale(0.7) rotate(-90deg);
+    }
+
+    #ring-value {
+        font-size: 1.8rem;
+    }
+
+    .timeline {
+        padding-left: 30px;
+    }
+
+    .timeline-item::before {
+        left: -36px;
     }
 
     .compare-container {
@@ -418,18 +507,43 @@ footer {
 
     .compare-side {
         width: 100%;
+        padding: 30px;
     }
 
     .compare-divider {
-        display: none;
+        height: 1px;
+        width: 100%;
+        margin: 10px 0;
     }
 
+    .reflection {
+        font-size: 1.1rem;
+        padding: 0 10px;
+    }
+
+    .quote-item p {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        padding: 40px 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+/* Small Mobile Breakpoint */
+@media (max-width: 480px) {
     #hero h1 {
-        font-size: 3rem;
+        font-size: 2.2rem;
     }
 
-    .section-title {
-        font-size: 2rem;
+    .ring-container {
+        transform: scale(0.9);
     }
 }
 
