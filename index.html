@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>理性圣诞 · 人文与秩序的节日叙事</title>
+    <meta name="description" content="一场关于圣诞的理性探讨：从历史演变到现代社会的秩序确认，探索寒冬中的共同体意义。">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="lang-switch">
+        <a href="index.html" class="active">中文</a>
+        <a href="en.html">EN</a>
+    </div>
+
+    <div id="snow-canvas-container">
+        <canvas id="snow-canvas"></canvas>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section">
+            <div class="content">
+                <h1 class="reveal-text">圣诞，不只是童话</h1>
+                <p class="reveal-text delay-1">它是一种文明在寒冬中的自我确认</p>
+                <div class="scroll-indicator">
+                    <span>向下探索</span>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1: Definition -->
+        <section id="definition" class="section">
+            <div class="container">
+                <h2 class="section-title">圣诞是什么？</h2>
+                <div class="grid">
+                    <div class="card" data-aos="fade-up">
+                        <h3>非消费主义陷阱</h3>
+                        <p>剥离商业符号的华丽外衣，节日的核心本是精神与情感的回归。</p>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-delay="1">
+                        <h3>非单纯的童话</h3>
+                        <p>拒绝低幼化的叙事，重新审视节日在人类社会秩序中的地位。</p>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-delay="2">
+                        <h3>时间的界碑</h3>
+                        <p>在周而复始的四季中，为漫长的冬夜设定一个可以共享的终点。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Time & Order -->
+        <section id="interactive" class="section">
+            <div class="container">
+                <div class="interactive-layout">
+                    <div class="interactive-text">
+                        <h2 class="section-title">时间与秩序</h2>
+                        <p class="quote">“在一年中最黑的时刻，人类选择点灯。”</p>
+                        <ul class="order-list">
+                            <li data-index="0" data-label="私域" data-value="家庭" data-percent="25">家庭：私域的温情节点</li>
+                            <li data-index="1" data-label="公域" data-value="社会" data-percent="50">社会：公域的协作互信</li>
+                            <li data-index="2" data-label="根源" data-value="信任" data-percent="75">信仰：秩序的文明根源</li>
+                            <li data-index="3" data-label="循环" data-value="自然" data-percent="100">自然：周而复始的循环</li>
+                        </ul>
+                    </div>
+                    <div class="interactive-visual">
+                        <div class="ring-container">
+                            <svg class="progress-ring" width="400" height="400">
+                                <circle class="progress-ring__circle-bg" stroke="#1a202c" stroke-width="2"
+                                    fill="transparent" r="180" cx="200" cy="200" />
+                                <circle id="progress-circle" class="progress-ring__circle" stroke="#cfa96b"
+                                    stroke-width="4" fill="transparent" r="180" cx="200" cy="200" />
+                            </svg>
+                            <div class="ring-center">
+                                <span id="ring-label">共同体</span>
+                                <span id="ring-value" data-initial="共同体">秩序</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: History Timeline -->
+        <section id="history" class="section">
+            <div class="container">
+                <h2 class="section-title">历史的维度</h2>
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="time">起源</div>
+                        <div class="desc">冬至节气与古罗马的农神节，人类对光明的原始渴求。</div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="time">中世纪</div>
+                        <div class="desc">宗教礼仪与社会等级的融合，节日成为稳定的社会粘合剂。</div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="time">现代</div>
+                        <div class="desc">狄更斯式的温情与维多利亚时代的建构，定义了当下的团圆意义。</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Modern Society -->
+        <section id="modern" class="section">
+            <div class="container">
+                <div class="compare-container">
+                    <div class="compare-side item-left" data-aos="fade-right">
+                        <h3>仪式</h3>
+                        <p>通过重复的、非功利的行为，建立个体与永恒的时间联系。</p>
+                    </div>
+                    <div class="compare-divider"></div>
+                    <div class="compare-side item-right" data-aos="fade-left">
+                        <h3>消费</h3>
+                        <p>通过物品的交换与流通，维持现代社会物质循环的效率。</p>
+                    </div>
+                </div>
+                <div class="reflection" data-aos="zoom-in">
+                    <p>当节日被现代性重构，我们如何保护那颗宁静的、属于冬夜的火种？</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Quotes -->
+        <section id="quotes" class="section">
+            <div class="container">
+                <div class="quote-slider" data-aos="zoom-in">
+                    <div class="quote-item">
+                        <p>“文明从不喧哗，它只是持续存在。”</p>
+                        <span>Civilization never shouts; it simply persists.</span>
+                    </div>
+                    <div class="quote-item" style="margin-top: 80px; opacity: 0.8;">
+                        <p>“在最黑暗的时刻，人类通过分享火种确认彼此的存在。”</p>
+                        <span>In the darkest hours, humans confirm each other's presence by sharing the spark.</span>
+                    </div>
+                    <div class="quote-item" style="margin-top: 80px; opacity: 0.6;">
+                        <p>“节日是时间的刻度，它赋予了虚无以形状。”</p>
+                        <span>Festivals are the scales of time, giving shape to the void.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="brand">理性圣诞 2025</div>
+                    <div class="tagline">人文与秩序的节日叙事</div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
